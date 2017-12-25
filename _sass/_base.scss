@@ -1,7 +1,4 @@
-@import url('https://rsms.me/interface/interface.css');
-// @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500');
-
-$base-font-family: --apple-system, BlinkMacSystemFont, Interface, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: --apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 $base-font-size:   18px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -9,20 +6,14 @@ $base-line-height: 1.5;
 $spacing-unit:     $base-font-size;
 $text-color:       black;
 $background-color: white;
-// $link-color:      #2a7ae2;
 $link-color:      #2a7ae2;
 
-$grey-color:       #828282;
+$grey-color:       #aaa;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-// $navbar-bg-color: rgb(7, 71, 166);
-// $navbar-bg-color: transparentize(rgb(253, 252, 252), 0.1);
-// $navbar-bg-color: transparentize(rgb(250, 249, 249), 0.1);
-$navbar-bg-color: #111;
-// $navbar-bg-color: white;
-$navbar-color: white;
-// $navbar-color: black;
+$navbar-bg-color: #eee;
+$navbar-color: black;
 $navbar-height: 3em;
 
 $solarized-base01: black;
@@ -43,6 +34,8 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
+  letter-spacing: -0.01em;
+  // font-family: $base-font-family;
 }
 
 html {
@@ -99,7 +92,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  border-bottom: 1px darken($navbar-bg-color, 10%) solid;
+  // border-bottom: 1px darken($navbar-bg-color, 10%) solid;
   // box-shadow: 0 0 4px darken($navbar-bg-color, 7%);
 }
 
@@ -186,7 +179,7 @@ li {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-weight: 500;
-  // font-weight: 400;
+  // font-weight: 300;
   // letter-spacing: -0.01em;
 }
 
@@ -198,11 +191,11 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($link-color, 15%);
+    // color: darken($link-color, 15%);
+    color: $link-color;
   }
 
   &:hover {
-    color: $text-color;
     text-decoration: underline;
   }
 }
