@@ -34,8 +34,7 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
-  letter-spacing: -0.01em;
-  // font-family: $base-font-family;
+  font-family: $base-font-family;
 }
 
 html {
@@ -89,7 +88,7 @@ body {
   background-color: $navbar-bg-color;
   position: fixed;
   top: 0; left: 0;
-
+  //
   display: flex;
   flex-direction: column;
   // border-bottom: 1px darken($navbar-bg-color, 10%) solid;
@@ -112,6 +111,10 @@ body {
   &:visited {
     color: $navbar-color;
   }
+}
+
+.navbar__item {
+  margin-right: 2em;
 }
 
 main {
@@ -191,7 +194,6 @@ a {
   text-decoration: none;
 
   &:visited {
-    // color: darken($link-color, 15%);
     color: $link-color;
   }
 
@@ -227,7 +229,7 @@ code {
   border-radius: 3px;
   background-color: $solarized-base3;
   color: $solarized-base01;
-  font-family: "Fira Mono", "Roboto Mono", monospace;
+  font-family: Consalas, Monaco, monospace;
 }
 
 code {
